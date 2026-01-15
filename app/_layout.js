@@ -2,9 +2,9 @@ import { Stack, useRouter } from "expo-router";
 import { LanguageProvider } from '../context/LanguageContext';
 import { TouchableOpacity } from "react-native";
 import { Feather } from '@expo/vector-icons';
-import { LogBox } from 'react-native'; // <--- මේක එකතු කරන්න
+import { LogBox } from 'react-native'; 
 
-// --- Warnings අයින් කරන කෝඩ් එක ---
+
 LogBox.ignoreLogs([
   'Firebase Analytics is not supported',
   'IndexedDB unavailable',
@@ -18,7 +18,7 @@ export default function RootLayout() {
   return (
     <LanguageProvider>
       <Stack screenOptions={{ headerShown: false }}>
-        {/* ඔයාගේ Screens ටික ඒ විදියටම තියන්න */}
+        {}
         <Stack.Screen name="index" />
         <Stack.Screen name="screen/mainLanding" />
         <Stack.Screen name="screen/news" />
