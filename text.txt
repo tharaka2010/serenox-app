@@ -1,0 +1,19 @@
+Act as a Senior Release Engineer.
+
+I am about to run the final build for a physical Android device. I need a "GO" or "NO-GO" verdict.
+
+Please audit the following 3 critical areas to prevent a White Screen or Installation failure:
+
+1. **EAS Configuration (Crucial):**
+   - Check `eas.json` -> `preview` profile.
+   - CONFIRM that `android.buildType` is explicitly set to `"apk"`. (If it is missing or set to 'app-bundle', the user cannot install it).
+
+2. **Environment Variables:**
+   - Verify that `babel.config.js` includes the `module:react-native-dotenv` plugin.
+   - (Note: The user has already pushed secrets to EAS, so just verify the code is ready to receive them).
+
+3. **Crash Prevention:**
+   - Check `app.json` for the existence of `android.package`, `android.googleServicesFile`, and `android.permissions` (INTERNET).
+   - Check if `google-services.json` exists in the root.
+
+Output a summary. If the preview profile is set to "apk" and config is good, give a "READY FOR BUILD" status.

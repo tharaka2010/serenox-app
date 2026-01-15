@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 7.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "API_KEY": "${API_KEY}",
+        "AUTH_DOMAIN": "${AUTH_DOMAIN}",
+        "PROJECT_ID": "${PROJECT_ID}",
+        "STORAGE_BUCKET": "${STORAGE_BUCKET}",
+        "MESSAGING_SENDER_ID": "${MESSAGING_SENDER_ID}",
+        "APP_ID": "${APP_ID}",
+        "MEASUREMENT_ID": "${MEASUREMENT_ID}"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "API_KEY": "${API_KEY}",
+        "AUTH_DOMAIN": "${AUTH_DOMAIN}",
+        "PROJECT_ID": "${PROJECT_ID}",
+        "STORAGE_BUCKET": "${STORAGE_BUCKET}",
+        "MESSAGING_SENDER_ID": "${MESSAGING_SENDER_ID}",
+        "APP_ID": "${APP_ID}",
+        "MEASUREMENT_ID": "${MEASUREMENT_ID}"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

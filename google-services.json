@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "305914583809",
+    "project_id": "sexeducation-c0902",
+    "storage_bucket": "sexeducation-c0902.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305914583809:android:4e279fc7a25d895039d900",
+        "android_client_info": {
+          "package_name": "com.seronox.sexeducation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ6UQqRTXy3JBCVz-4OFdckvmd5dz6Auo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
